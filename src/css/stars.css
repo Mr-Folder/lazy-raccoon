@@ -1,0 +1,54 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glitter {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1.6);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  75% {
+    transform: scale(1.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+#space {
+  position: fixed;
+  height: 400vh;
+  width: 400vw;
+  left: -150vw;
+  top: -150vh;
+  overflow: hidden;
+  background: #000;
+  transform-origin: 50% 50%;
+  animation: spin 500s linear 0s infinite normal;
+}
+
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #999;
+  opacity: 0;
+  animation: glitter 20s ease-in 0s infinite normal;
+  border-radius: 50%; /* Makes the stars circular */
+}
