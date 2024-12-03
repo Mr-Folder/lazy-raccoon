@@ -12,161 +12,148 @@
 
 <div id="space" class="z-0"></div>
 
-<body class="">
+<body class=" ">
+  <div class="relative z-10 min-h-screen flex flex-col ">
+    <header>
+      <nav class=" fixed w-full  h-26 bg-gradient-to-r  from-indigo-50 via-purple-500 to-blue-600  pb-1 rounded">
+        <div class="flex h-full w-full bg-dark ">
+          <div class=" flex h-full w-full flex-row items-center  justify-between   2xl:mx-36">
+            <!-- Image div -->
+            <div class="w-32 flex-shrink-0 flex items-center">
+              <img class="h-full p-5 w-auto" src="src/assets/images/cosmonaut_yoga.png" alt="Cosmonaut image">
+            </div>
+            <!-- List div -->
+            <div class="w-auto hidden lg:flex flex-1 justify-center">
+              <ul class="flex flex-row text-2xl space-x-8 ">
+                <li>
+                  <a href="#"
+                    class="block  pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#about"
+                    class="block pr-4 pl-3  text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                    About </a>
+                </li>
+                <li>
+                  <a href="#about"
+                    class="block  text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                    My interests </a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block   text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                    Contact </a>
+                </li>
+              </ul>
+            </div>
 
+            <!-- Button div -->
+            <div class="w-32 flex-shrink-0 flex items-center">
+              <button
+                class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                Button
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero -->
+    <section class=" 2xl:mt-40 scroll-mt-24 min-h-screen" id="hero">
+      <div class=" pt-36  2xl:pt-64">
+        <div class="flex  2xl:mx-48 flex-col 2xl:flex-row items-center justify-center ">
+          <img class=" flex-none  w-1/2 2xl:w-1/6" src="src/assets/images/cosmonaut-2.png">
+          <div class=" flex-initial  2xl:w-4/6 items-center mx-auto text-center gap">
+            <h1 class="text-6xl text-light-grey font-feijoa"> Hello</h1>
+            <h2 class="text-6xl text-light-grey font-feijoa"> I am Leonard</h2>
+            <hr
+              class="w-48 h-1 mx-auto my-4 bg-gradient-to-r from-indigo-50 via-purple-500 to-blue-600  border-0 rounded md:my-10 ">
+            <h3 class="text-6xl text-light-grey font-feijoa"> DevOps engineer </h3>
+          </div>
+          <div class=" 2xl:w-1/6"></div>
+        </div>
+      </div>
+    </section>
 
-  <div class="min-h-screen flex flex-col ">
-    <section class="relative scroll-mt-24">
-      <div class="py-64">
-        <div class="relative flex flex-1 mx-48 flex-row  items-center justify-center">
-          <img class=" left-0 z-10 w-6/6 " src="src/assets/images/cosmonaut-3.png">
-          <div class="   items-center mx-auto ">
-            <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
+    <section class=" min-h-screen " id="about">
+      <div class="  px-4 mx-auto max-w-screen-xl ">
+        <div
+          class=" h-36 bg-gradient-to-r from-indigo-50 via-purple-500 to-blue-600 border-gray-700  rounded-lg  p-1  mb-8">
+          <div class="flex h-full w-full bg-black justify-center items-center 2xl:p-10 flex-col gap-4">
+            <span class="text-3xl text-light-grey text-center">I am a 24 years old DevOps student from
+              France. </span>
+            <span class="text-1x1 text-gray-400">I've been working for the last 2 years as an
+              apprentice, where I
+              mostly
+              encountered `kubernetes` and `cloud infrastructure`</span>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="relative scroll-mt-24">
-      <div class="pt-64">
-        <div class="relative flex mx-48 flex-row  items-center justify-center">
-          <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-          <div class="   items-center mx-auto ">
-            <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
+        <div class=" grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-950 border  border-gray-700 rounded-lg p-8 md:p-12">
+            <a href="#"
+              class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2">
+              <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 18">
+                <path
+                  d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z" />
+              </svg>
+              Design
+            </a>
+            <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Start with Flowbite
+              Design System
+            </h2>
+            <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Static websites are now
+              used to
+              bootstrap lots of websites and are becoming the basis for a variety of tools that even
+              influence both
+              web
+              designers and developers.</p>
+            <a href="#"
+              class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read
+              more
+              <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="relative scroll-mt-24">
-      <div class="pt-64">
-        <div class="relative flex mx-48 flex-row  items-center justify-center">
-          <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-          <div class="   items-center mx-auto ">
-            <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="relative scroll-mt-24">
-      <div class="pt-64">
-        <div class="relative flex mx-48 flex-row  items-center justify-center">
-          <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-          <div class="   items-center mx-auto ">
-            <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="relative scroll-mt-24">
-      <div class="pt-64">
-        <div class="relative flex mx-48 flex-row  items-center justify-center">
-          <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-          <div class="   items-center mx-auto ">
-            <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
+          <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+            <a href="#"
+              class="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2">
+              <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 20 16">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15" />
+              </svg>
+              Code
+            </a>
+            <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Best react libraries
+              around the
+              web
+            </h2>
+            <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Static websites are now
+              used to
+              bootstrap lots of websites and are becoming the basis for a variety of tools that even
+              influence both
+              web
+              designers and developers.</p>
+            <a href="#"
+              class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read
+              more
+              <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
     </section>
   </div>
-  <section class="relative scroll-mt-24">
-    <div class="pt-64">
-      <div class="relative flex mx-48 flex-row  items-center justify-center">
-        <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-        <div class="   items-center mx-auto ">
-          <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="relative scroll-mt-24">
-    <div class="pt-64">
-      <div class="relative flex mx-48 flex-row  items-center justify-center">
-        <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-        <div class="   items-center mx-auto ">
-          <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="relative scroll-mt-24">
-    <div class="pt-64">
-      <div class="relative flex mx-48 flex-row  items-center justify-center">
-        <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-        <div class="   items-center mx-auto ">
-          <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="relative scroll-mt-24">
-    <div class="pt-64">
-      <div class="relative flex mx-48 flex-row  items-center justify-center">
-        <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-        <div class="   items-center mx-auto ">
-          <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="relative scroll-mt-24">
-    <div class="pt-64">
-      <div class="relative flex mx-48 flex-row  items-center justify-center">
-        <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-        <div class="   items-center mx-auto ">
-          <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="relative scroll-mt-24">
-    <div class="pt-64">
-      <div class="relative flex mx-48 flex-row  items-center justify-center">
-        <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-        <div class="   items-center mx-auto ">
-          <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="relative scroll-mt-24">
-    <div class="pt-64">
-      <div class="relative flex mx-48 flex-row  items-center justify-center">
-        <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-        <div class="   items-center mx-auto ">
-          <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="relative scroll-mt-24">
-    <div class="pt-64">
-      <div class="relative flex mx-48 flex-row  items-center justify-center">
-        <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-        <div class="   items-center mx-auto ">
-          <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="relative scroll-mt-24">
-    <div class="pt-64">
-      <div class="relative flex mx-48 flex-row  items-center justify-center">
-        <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-        <div class="   items-center mx-auto ">
-          <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="relative scroll-mt-24">
-    <div class="pt-64">
-      <div class="relative flex mx-48 flex-row  items-center justify-center">
-        <img class="absolute left-0 z-10 w-1/6 " src="src/assets/images/cosmonaut-3.png">
-        <div class="   items-center mx-auto ">
-          <h1 class="text-6xl text-light-grey font-feijoa"> Hello, I am Leonard</h1>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <script src=" src/bg/stars.js">
   </script>
