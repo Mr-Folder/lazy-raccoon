@@ -1,7 +1,7 @@
 var limit = 1001;
 space = document.getElementById("space");
 
-stars = {
+let stars = {
   rand: function() {
     return Math.random();
   },
@@ -14,7 +14,6 @@ stars = {
   },
 
   create: function() {
-    console.log("create star");
     for (let i = 0; i <= limit; i++) {
       let star = this.createStar();
       star.style.top = `${this.rand() * 100}%`;
@@ -24,5 +23,4 @@ stars = {
     }
   }
 };
-
 stars.create();
